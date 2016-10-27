@@ -1,0 +1,210 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+@keyframes rainbow {
+    0% {
+        color: #ff9000;
+        background-color: #000;
+    }
+    50% {
+        background-color: #ff9000;
+        color: black;
+    }
+    100% {
+        color: #ff9000;
+        background-color: #000;
+    }
+}
+
+@keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+    }
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+input {
+    display: block;
+}
+
+h2 {
+    margin: 0;
+    font-size: 6vw;
+    text-align: center;
+    padding: 3%;
+    animation: rainbow 20s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+input[type=text] {
+    font-size: .9em;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #555;
+    border: 0px solid white;
+    display: inline-block;
+    width: 25%;
+    padding: 0.5%;
+    margin-right: 0%;
+    outline: none!important;
+    font-family: 'Raleway', sans-serif;
+    transition: all 200ms;
+    -webkit-transition: all 200ms;
+}
+
+#searchResult,
+#searched {
+    color: white;
+    display: inline-block;
+}
+
+#searchResult {
+    color: white;
+    min-height: 1em;
+    font-size: .75em;
+    float: right;
+    margin-right: 1%;
+}
+
+#searched {
+    font-size: 5vw;
+    color: white;
+    display: block;
+    text-align: right;
+    margin-right: 1%;
+    line-height: 2.5vw;
+    min-height: 1em;
+}
+
+.InstantBox {
+    width: 100%;
+}
+
+.InstantBox div[id^=bf] {
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    padding: 8% 0;
+    background-size: 100% 100%;
+    background-position: top center;
+    transition: all 350ms;
+    -webkit-transition: all 350ms;
+    width: 20%;
+    height: 30vw;
+}
+
+.InstantBox div[id^=bf]:hover {
+    background-position: top center;
+    background-size: 105% 105%;
+}
+
+#rowBox {
+    margin-top: 0px;
+    width: 100%;
+    padding: 0px;
+}
+
+.InstantBox div[id^=bf] #playBg {
+    border-style: solid;
+    border-color: #ff9000;
+    border-top-width:0px;
+    border-right-width:1px;
+    border-bottom-width:2px;
+    border-left-width:3px;
+    border-radius: 250px;
+    animation: 1000ms rotate infinite;
+     -webkit-animation-timing-function: linear; /* Chrome, Safari, Opera */
+    animation-timing-function: linear;
+    width: 10vw;
+    height: 10vw;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+}
+
+.InstantBox div[id^=bf] a {
+    text-decoration: none;
+    font-size: 8vw;
+    width: 10vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -50%;
+    color: #ff9000;
+}
+
+.InstantBox div[id^=bf] p {
+    font-size: 1.5vw;
+    color: white;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1% 20%;
+    transition: all 50ms;
+    -webkit-transition: all 500ms;
+}
+
+.InstantBox div[id^=bf] a,
+.InstantBox div[id^=bf] p,
+.InstantBox div[id^=bf]:hover #playBg {
+    display: block;
+    text-align: center;
+    opacity: 0;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+}
+
+.InstantBox div[id^=bf]:hover a,
+.InstantBox div[id^=bf]:hover p,
+.InstantBox div[id^=bf]:hover #playBg {
+    opacity: 1;
+}
+
+.seasons {
+    background-color:rgba(0,0,0,0.9);
+    position:relative;
+    bottom:0px;
+    /*z-index:9999;*/
+    left:0px;
+    width:100%;
+    margin:0px!important;
+    -webkit-padding-start:0;
+}
+.seasons h3:empty{
+    display:none;
+}
+.seasons h3{
+    font-size: 20px;
+    color:white;
+    border:2px solid #ff9000;
+    text-align: center;
+}
+.seasons li{
+    display:none!important;
+}
+.grandChild{
+    border:2px solid white;
+    box-sizing:border-box;
+    font-size:16px!important;
+    color:white!important;
+    display:block;
+    margin:0!important;
+    padding:5px 0;
+    width:100%!important;
+}
+.seasons:hover li{
+    display:block!important;
+}
+.grandChild:hover{
+    color:#ff9000!important;
+}
+
+
+
